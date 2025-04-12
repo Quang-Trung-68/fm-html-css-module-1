@@ -25,30 +25,6 @@
   </head>
   <body>
     
-    <!-- <header>
-      <nav class="navigation">
-        <a href="#!">
-          <div class="logo-page">
-            <img
-              src="./assets/icon/logo-page.svg"
-              alt="Logo NFT Marketplace"
-              class="logo"
-            />
-            <p class="logo-title">NFT Marketplace</p>
-          </div>
-        </a>
-        <div class="btn btn-navigation">
-          <button class="btn-secondary">Marketplace</button>
-          <button class="btn-secondary">Rankings</button>
-          <button class="btn-secondary">Connect a wallet</button>
-          <button class="btn-secondary">
-            <img src="./assets/icon/user-sign-up.svg" alt="user sign up icon" />
-            <span>Sign Up</span>
-          </button>
-        </div>
-      </nav>
-    </header> -->
-
     <!-- Header -->
 
     <header class="header">
@@ -93,6 +69,25 @@
                 NFT Marketplace UI Created With Anima For Figma. Collect, Buy And
                 Sell Art From More Than 20k NFT Artists.
               </p>
+              <div class="hero-section__right hero-section-mobile">
+                <img
+                  src="./assets/img/space-walking.png"
+                  alt="Space Walking Animakid"
+                  class="hero-section__right-media"
+                />
+                <div class="sub-image">
+                  <p class="h5-work-sans">Space Walking</p>
+                  <div class="artist-card">
+                    <img
+                      width="24"
+                      height="24"
+                      src="./assets/img/avatar/avatar14.png"
+                      alt="avatar-card"
+                    />
+                    <p class="base-body-work-sans">Animakid</p>
+                  </div>
+                </div>
+              </div>
               <button class="btn btn-secondary btn__hero-custom">
                 <img src="./assets/icon/RocketLaunch.svg" />
                 <span>Get Started</span>
@@ -233,7 +228,7 @@
                 Checkout Top Rated Creators On The NFT Marketplace
               </p>
             </div>
-            <button class="btn btn-secondary">
+            <button class="btn btn-secondary btn-ranking">
               <img src="./assets/icon/RocketLaunch-blue.svg" />
               <span>View Rankings</span>
             </button>
@@ -444,6 +439,10 @@
               </div>
             </div>
           </div>
+          <button class="btn btn-secondary btn-ranking-mobile">
+            <img src="./assets/icon/RocketLaunch-blue.svg" />
+            <span>View Rankings</span>
+          </button>
         </div>
       </section>
 
@@ -847,7 +846,7 @@
               <h2 class="h3-work-sans heading-h2">Discover More NFTs</h2>
               <p class="body-text-work-sans heading-h2-desc">Explore new trending NFTs</p>
             </div>
-            <button class="btn btn-secondary">
+            <button class="btn btn-secondary btn-discover-see-all">
               <img src="./assets/icon/eye.svg" />
               <span>See All</span>
             </button>
@@ -872,12 +871,12 @@
                 </div>
                 <div class="value">
                   <div class="price">
-                    <p class="caption-space-mono">Price</p>
-                    <p class="base-body-space-mono">1.63 ETH</p>
+                    <p class="caption-space-mono value-price">Price</p>
+                    <p class="base-body-space-mono value-eth">1.63 ETH</p>
                   </div>
                   <div class="bid">
-                    <p class="caption-space-mono">Highest Bid</p>
-                    <p class="base-body-space-mono">0.33 wETH</p>
+                    <p class="caption-space-mono value-price">Highest Bid</p>
+                    <p class="base-body-space-mono value-eth">0.33 wETH</p>
                   </div>
                 </div>
               </div>
@@ -901,12 +900,12 @@
                 </div>
                 <div class="value">
                   <div class="price">
-                    <p class="caption-space-mono">Price</p>
-                    <p class="base-body-space-mono">1.63 ETH</p>
+                    <p class="caption-space-mono value-price">Price</p>
+                    <p class="base-body-space-mono value-eth">1.63 ETH</p>
                   </div>
                   <div class="bid">
-                    <p class="caption-space-mono">Highest Bid</p>
-                    <p class="base-body-space-mono">0.33 wETH</p>
+                    <p class="caption-space-mono value-price">Highest Bid</p>
+                    <p class="base-body-space-mono value-eth">0.33 wETH</p>
                   </div>
                 </div>
               </div>
@@ -930,17 +929,21 @@
                 </div>
                 <div class="value">
                   <div class="price">
-                    <p class="caption-space-mono">Price</p>
-                    <p class="base-body-space-mono">1.63 ETH</p>
+                    <p class="caption-space-mono value-price">Price</p>
+                    <p class="base-body-space-mono value-eth">1.63 ETH</p>
                   </div>
                   <div class="bid">
-                    <p class="caption-space-mono">Highest Bid</p>
-                    <p class="base-body-space-mono">0.33 wETH</p>
+                    <p class="caption-space-mono value-price">Highest Bid</p>
+                    <p class="base-body-space-mono value-eth">0.33 wETH</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <button class="btn btn-secondary btn-discover-see-all-mobile">
+            <img src="./assets/icon/eye.svg" />
+            <span>See All</span>
+          </button>
         </div>
       </section>
 
@@ -959,11 +962,30 @@
                 <p class="base-body-work-sans">Shroomie</p>
               </div>
               <h2 class="h2-work-sans heading-h2">Magic Mashrooms</h2>
-              <button class="btn btn-secondary">
+              <div class="clock-remaining">
+                <p class="caption-space-mono">Auction ends in:</p>
+                <div class="time-remain">
+                  <div class="hours">
+                    <p class="h3-space-mono">59</p>
+                    <p class="caption-space-mono">Hours</p>
+                  </div>
+                  <p class="h4-space-mono">:</p>
+                  <div class="hours">
+                    <p class="h3-space-mono">59</p>
+                    <p class="caption-space-mono">Minutes</p>
+                  </div>
+                  <p class="h4-space-mono">:</p>
+                  <div class="hours">
+                    <p class="h3-space-mono">59</p>
+                    <p class="caption-space-mono">Seconds</p>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-see-nft">
                 <img src="./assets/icon/eye.svg" />
                 <span>See NFT</span>
               </button>
-              <div class="clock-remaining">
+              <div class="clock-remaining clock-remaining-desk-tab">
                 <p class="caption-space-mono">Auction ends in:</p>
                 <div class="time-remain">
                   <div class="hours">

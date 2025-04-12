@@ -191,7 +191,6 @@ button:hover {
 .hero-section__inner {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 30px;
 }
@@ -306,7 +305,7 @@ button:hover {
   align-items: start;
 }
 
-.top-rated-artists .title .btn-secondary {
+.top-rated-artists .title .btn-ranking {
   background-color: transparent;
   border: 2px solid #a259ff;
 }
@@ -347,7 +346,6 @@ button:hover {
   margin-top: 5px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   column-gap: 10px;
   row-gap: 5px;
 }
@@ -456,11 +454,11 @@ button:hover {
   justify-content: space-between;
 }
 
-.discover-nfts .discover-nft-item .content .value .caption-space-mono {
+.discover-nfts .discover-nft-item .content .value .value-price {
   color: #858584;
 }
 
-.discover-nfts .discover-nft-item .content .value .base-body-space-mono {
+.discover-nfts .discover-nft-item .content .value .value-eth {
   margin-top: 8px;
 }
 
