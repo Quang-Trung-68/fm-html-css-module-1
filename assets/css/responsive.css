@@ -4,68 +4,216 @@
 
 /* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
 @media screen and (max-width: 991px) {
+  .header__list,
+  .header__btn {
+    display: none;
+  }
 
-    .header__list, .header__btn{
-        display: none;
-    }
-
-    .header__btn-menu{
-        display: block;
-        background-color: #2b2b2b;
-        border: none;
-    }
+  .header__btn-menu {
+    display: block;
+    background-color: #2b2b2b;
+    border: none;
+  }
 }
 /*  * * Thiet bi rieng Table: @media screen and (min-width: 768px) and (max-width: 991px) * * */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .container {
-        max-width: 690px;
-        padding: 72px 0;
-    }
-    .container .heading-h2 {
-        font-size: 2.8rem;
-        line-height: 1.4;
-    }
-    .header {
-        padding: 15px 50px;
-    }
-    /* =====Hero===== */
-    .hero-section__left h1{
-        font-weight: 600;
-        font-size: 3.8rem;
-        line-height: 1.2;
-    }
+  .container {
+    max-width: 690px;
+    padding: 72px 0;
+  }
+  .container .heading-h2 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+  }
+  .header {
+    padding: 15px 50px;
+  }
+  /* =====Hero===== */
+  .hero-section__left h1 {
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 1.2;
+  }
 
-    .btn__hero-custom{
-        margin-top: 20px;
-    }
-    .hero-section__additional-info{
-        margin-top: 20px;
-    }
-    .hero-section__left .desc{
-        font-size: 1.6rem;
-        line-height: 1.4;
-    }
+  .btn__hero-custom {
+    margin-top: 20px;
+  }
+  .hero-section__additional-info {
+    margin-top: 20px;
+  }
+  .hero-section__left .desc {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
 
-    .hero-section__additional-info .total-number{
-        font-size: 2.2rem;
-        line-height: 1.6;
-    }
+  .hero-section__additional-info .total-number {
+    font-size: 2.2rem;
+    line-height: 1.6;
+  }
 
-    .hero-section__additional-info .total-sale{
-        font-size: 1.6rem;
-        line-height: 1.4;
-    }
-    .hero-section__right-media{
-        max-width: 330px;
-    }
+  .hero-section__additional-info .total-sale {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .hero-section__right-media {
+    max-width: 330px;
+  }
+
+  /* =====Trending collection===== */
+  .collection-card-row {
+    margin-top: 40px;
+  }
+  .collection-card:last-child {
+    display: none;
+  }
+  .collection-card {
+    width: calc((100% - 30px) / 2);
+  }
+
+  /* ======Top artist====== */
+  .top-rated-artists .artist-card-list {
+    margin-top: 40px;
+  }
+
+  .top-rated-artists .artist-card-item {
+    width: calc((100% - 30px) / 2);
+    flex-direction: row;
+  }
+  .top-rated-artists .artist-card-item .avatar-artist {
+    max-width: 60px;
+  }
+  .top-rated-artists .artist-card-item .name-creator {
+    align-items: start;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  .top-rated-artists .artist-card-item .name-creator p:last-child {
+    column-gap: 5px;
+  }
+  .top-rated-artists .card-item-order {
+    top: 13px;
+    left: 12px;
+  }
+
+  /* =====Browse categories===== */
+  .browse-categories .categories-list {
+    margin-top: 40px;
+  }
+  .browse-categories .categories-item .thumb-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+  .browse-categories .categories-item .name-categories {
+    font-size: 1.6rem;
+    padding: 20px 20px 25px;
+  }
+
+  /* =======Discover======= */
+  .discover-nfts .discover-nft-list {
+    margin-top: 40px;
+  }
+  .discover-nfts .discover-nft-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .discover-nfts .discover-nft-item:last-child {
+    display: none;
+  }
+
+  /* ======NFT Highlight====== */
+  .nft-highlight {
+    background: linear-gradient(to top, #a259ff, #a259ff00),
+      url(../img/mushHLTablet.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .nft-highlight .block-cta {
+    margin-top: 360px;
+    padding: 0 2px;
+  }
+
+  /* =====How works===== */
+  .how-works .work-card-list {
+    margin-top: 40px;
+  }
+
+  .how-works .work-card-item {
+    padding: 0 20px 30px;
+  }
+
+  .how-works .work-card-item .wrapper-thumb {
+    padding: 10px 5px 5px;
+  }
+
+  /* =====Weekly digest===== */
+
+  .container-weekly-digest {
+    padding: 40px 0 80px;
+  }
+  .weekly-digest .weekly-digest__inner {
+    gap: 30px;
+    padding: 40px 30px;
+  }
+
+  .weekly-digest .weekly-digest__inner > * {
+    width: calc((100% - 30px) / 2);
+  }
+
+  .weekly-digest .weekly-digest__inner .content .btn-subscribe-weekly {
+    position: static;
+    padding: 12px;
+  }
+  .weekly-digest .weekly-digest__inner .content .put-email {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .weekly-digest .weekly-digest__inner .content .put-email input {
+    padding: 12px 20px;
+  }
+
+  /* ======Footer====== */
+  .footer .content {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .footer .content .contact,
+  .footer .content .explore {
+    width: 100%;
+  }
+  .footer .container-footer {
+    padding: 40px 0;
+  }
+  .footer .footer__inner {
+    padding: 0 0 49px;
+  }
+  .footer .content .call-to-action .put-email {
+    width: 60%;
+  }
+  .footer .content .contact p:first-of-type {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer .content .explore a:first-of-type {
+    margin-top: 20px;
+  }
+
+  .footer .content .call-to-action .desc-weekly {
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 /* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
 @media screen and (max-width: 767px) {
-    .container {
-        max-width: 100%;
-        padding: 40px 30px;
-    }
-    .header {
-        padding: 40px 30px;
-    }
+  .container {
+    max-width: 100%;
+    padding: 40px 30px;
+  }
+  .header {
+    padding: 40px 30px;
+  }
 }
