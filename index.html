@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- reset css -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-
-    <!-- style css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,11 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- responsive css -->
+     <link rel="stylesheet" href="./assets/css/responsive.css">
+
     <title>NFT Marketplace</title>
   </head>
   <body>
-    <header>
-      <!-- Navigation -->
+    
+    <!-- <header>
       <nav class="navigation">
         <a href="#!">
           <div class="logo-page">
@@ -42,52 +47,88 @@
           </button>
         </div>
       </nav>
+    </header> -->
+
+    <!-- Header -->
+
+    <header class="header">
+      <div class="header__inner">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="" class="header__logo-link">
+            <img src="./assets/icon/logo-page.svg" class="header__logo-icon">
+            <img src="./assets/icon/logo-name.svg" alt="NFT Marketplace">
+          </a>
+        </div>
+        <!-- Navigation -->
+         <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="" class="header__link">Marketplace</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Rankings</a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link">Connect a wallet</a>
+            </li>
+          </ul>
+         </nav>
+         <!-- Call to action -->
+          <a href="" class="btn btn-secondary header__btn">Sign Up</a>
+
+          <!-- Button menu -->
+           <button class="header__btn-menu"><img src="./assets/icon/menu.svg" alt=""></button>
+      </div>
     </header>
 
     <main>
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
-          <div class="hero-section__left">
-            <h1 class="h1-work-sans">Discover Digital Art & Collect NFTs</h1>
-            <p class="body-text-work-sans desc">
-              NFT Marketplace UI Created With Anima For Figma. Collect, Buy And
-              Sell Art From More Than 20k NFT Artists.
-            </p>
-            <button class="btn-secondary">
-              <img src="./assets/icon/RocketLaunch.svg" />
-              <span>Get Started</span>
-            </button>
-            <div class="hero-section__additional-info">
-              <div class="block">
-                <p class="h4-space-mono">240k+</p>
-                <p class="title-case">Total Sale</p>
-              </div>
-              <div class="block">
-                <p class="h4-space-mono">100k+</p>
-                <p class="title-case">Auctions</p>
-              </div>
-              <div class="block">
-                <p class="h4-space-mono">240k+</p>
-                <p class="title-case">Artists</p>
+        <div class="hero-section__inner">
+            <div class="hero-section__left">
+              <h1 class="h1-work-sans">Discover Digital Art & Collect NFTs</h1>
+              <p class="body-text-work-sans desc">
+                NFT Marketplace UI Created With Anima For Figma. Collect, Buy And
+                Sell Art From More Than 20k NFT Artists.
+              </p>
+              <button class="btn btn-secondary btn__hero-custom">
+                <img src="./assets/icon/RocketLaunch.svg" />
+                <span>Get Started</span>
+              </button>
+              <div class="hero-section__additional-info">
+                <div class="block">
+                  <p class="h4-space-mono total-number">240k+</p>
+                  <p class="title-case total-sale">Total Sale</p>
+                </div>
+                <div class="block">
+                  <p class="h4-space-mono total-number">100k+</p>
+                  <p class="title-case total-sale">Auctions</p>
+                </div>
+                <div class="block">
+                  <p class="h4-space-mono total-number">240k+</p>
+                  <p class="title-case total-sale">Artists</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="hero-section__right">
-            <img
-              src="./assets/img/space-walking.png"
-              alt="Space Walking Animakid"
-            />
-            <div class="sub-image">
-              <p class="h5-work-sans">Space Walking</p>
-              <div class="artist-card">
-                <img
-                  width="24"
-                  height="24"
-                  src="./assets/img/avatar/avatar14.png"
-                  alt="avatar-card"
-                />
-                <p class="base-body-work-sans">Animakid</p>
+            <div class="hero-section__right">
+              <img
+                src="./assets/img/space-walking.png"
+                alt="Space Walking Animakid"
+                class="hero-section__right-media"
+              />
+              <div class="sub-image">
+                <p class="h5-work-sans">Space Walking</p>
+                <div class="artist-card">
+                  <img
+                    width="24"
+                    height="24"
+                    src="./assets/img/avatar/avatar14.png"
+                    alt="avatar-card"
+                  />
+                  <p class="base-body-work-sans">Animakid</p>
+                </div>
               </div>
             </div>
           </div>
@@ -97,13 +138,13 @@
       <!-- Trending collection -->
       <section class="trending-collection">
         <div class="container">
-          <h2 class="h3-work-sans">Trending Collection</h2>
-          <p class="body-text-work-sans">
+          <h2 class="h3-work-sans heading-h2">Trending Collection</h2>
+          <p class="body-text-work-sans heading-h2-desc">
             Checkout Our Weekly Updated Trending Collection.
           </p>
           <div class="collection-card-row">
             <div class="collection-card">
-              <img src="./assets/img/trending-col-1.png" alt="DSGN Animals" />
+              <img src="./assets/img/trending-col-1.png" alt="DSGN Animals" class="collection-thumb"/>
               <div class="avatar-group">
                 <img
                   src="./assets/img/trending-col-1_1.png"
@@ -115,7 +156,7 @@
                 />
                 <span class="box-more-image h5-space-mono">1025+</span>
               </div>
-              <div class="h5-work-sans">DSGN Animals</div>
+              <div class="h5-work-sans collection-card-name">DSGN Animals</div>
               <div class="artist-card">
                 <img
                   width="24"
@@ -130,6 +171,7 @@
               <img
                 src="./assets/img/trending-col-2.png"
                 alt="Magic Mushrooms"
+                class="collection-thumb"
               />
               <div class="avatar-group">
                 <img
@@ -142,7 +184,7 @@
                 />
                 <span class="box-more-image h5-space-mono">1025+</span>
               </div>
-              <div class="h5-work-sans">Magic Mushrooms</div>
+              <div class="h5-work-sans collection-card-name">Magic Mushrooms</div>
               <div class="artist-card">
                 <img
                   width="24"
@@ -154,7 +196,7 @@
               </div>
             </div>
             <div class="collection-card">
-              <img src="./assets/img/trending-col-3.png" alt="Disco Machines" />
+              <img src="./assets/img/trending-col-3.png" alt="Disco Machines"  class="collection-thumb"/>
               <div class="avatar-group">
                 <img
                   src="./assets/img/trending-col-3_1.png"
@@ -166,7 +208,7 @@
                 />
                 <span class="box-more-image h5-space-mono">1025+</span>
               </div>
-              <div class="h5-work-sans">Disco Machines</div>
+              <div class="h5-work-sans collection-card-name">Disco Machines</div>
               <div class="artist-card">
                 <img
                   width="24"
@@ -186,12 +228,12 @@
         <div class="container">
           <div class="title">
             <div class="top-rated-title">
-              <h2 class="h3-work-sans">Top creators</h2>
-              <p class="body-text-work-sans">
+              <h2 class="h3-work-sans heading-h2">Top creators</h2>
+              <p class="body-text-work-sans heading-h2-desc">
                 Checkout Top Rated Creators On The NFT Marketplace
               </p>
             </div>
-            <button class="btn-secondary">
+            <button class="btn btn-secondary">
               <img src="./assets/icon/RocketLaunch-blue.svg" />
               <span>View Rankings</span>
             </button>
@@ -384,7 +426,7 @@
       <!-- Browse Categories -->
       <section class="browse-categories">
         <div class="container">
-          <h2 class="h3-work-sans">Browse Categories</h2>
+          <h2 class="h3-work-sans heading-h2">Browse Categories</h2>
           <div class="categories-list">
             <div class="categories-item">
               <div class="thumb-icon">
@@ -778,10 +820,10 @@
         <div class="container">
           <div class="title">
             <div class="top-rated-title">
-              <h2 class="h3-work-sans">Discover More NFTs</h2>
-              <p class="body-text-work-sans">Explore new trending NFTs</p>
+              <h2 class="h3-work-sans heading-h2">Discover More NFTs</h2>
+              <p class="body-text-work-sans heading-h2-desc">Explore new trending NFTs</p>
             </div>
-            <button class="btn-secondary">
+            <button class="btn btn-secondary">
               <img src="./assets/icon/eye.svg" />
               <span>See All</span>
             </button>
@@ -892,7 +934,7 @@
               <p class="base-body-work-sans">Shroomie</p>
             </div>
             <h2 class="h2-work-sans">Magic Mashrooms</h2>
-            <button class="btn-secondary">
+            <button class="btn btn-secondary">
               <img src="./assets/icon/eye.svg" />
               <span>See NFT</span>
             </button>
@@ -922,8 +964,8 @@
       <!-- How it works -->
       <section class="how-works">
         <div class="container">
-          <h2 class="h3-work-sans">How it works</h2>
-          <p class="body-text-work-sans">Find out how to get started</p>
+          <h2 class="h3-work-sans heading-h2">How it works</h2>
+          <p class="body-text-work-sans heading-h2-desc">Find out how to get started</p>
           <div class="work-card-list">
             <div class="work-card-item">
               <img
@@ -974,8 +1016,8 @@
             />
           </div>
           <div class="content">
-            <h2 class="h3-work-sans">Join Our Weekly Digest</h2>
-            <p class="body-text-work-sans">
+            <h2 class="h3-work-sans heading-h2">Join Our Weekly Digest</h2>
+            <p class="body-text-work-sans heading-h2-desc">
               Get exclusive promotions & updates straight to your inbox.
             </p>
             <div class="put-email">
@@ -985,7 +1027,7 @@
                 name="userEmail"
                 id="userEmail"
               />
-              <button class="btn-secondary">
+              <button class="btn btn-secondary btn-subscribe-weekly">
                 <img src="./assets/icon/mail.svg" />
                 <span>Subscribe</span>
               </button>
@@ -1050,7 +1092,7 @@
             </div>
             <div class="call-to-action">
               <h2 class="h5-space-mono">Join Our Weekly Digest</h2>
-              <p class="base-body-work-sans">
+              <p class="base-body-work-sans desc-weekly">
                 Get exclusive promotions & updates straight to your inbox.
               </p>
               <div class="put-email">
@@ -1060,7 +1102,7 @@
                   name="userEmail"
                   id="userEmail"
                 />
-                <button class="btn-secondary">Subscribe</button>
+                <button class="btn btn-secondary btn-subscribe-footer">Subscribe</button>
               </div>
             </div>
           </div>

@@ -15,12 +15,14 @@ body {
 
 /* ========================================= */
 /* ===common css==== */
+
 .container {
-  max-width: 1050px;
+  /* 1050 + 115 x 2 */
+  max-width: 1280px;
   margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 115px;
 }
+
 
 a {
   text-decoration: none;
@@ -34,7 +36,7 @@ input{
   color:#2B2B2B;
 }
 
-button {
+.btn {
   border: none;
   outline: none;
   color: inherit;
@@ -50,6 +52,10 @@ button {
   justify-content: center;
   gap: 12px;
   transition: 0.3s ease-out;
+}
+
+.heading-h2-desc {
+  margin-top: 10px;
 }
 
 .btn-primary {
@@ -141,55 +147,48 @@ button:hover {
   font-size: 1.2rem;
   line-height: 1.1;
 }
-/* =========Navigation======== */
 
-.navigation {
+
+/* ======Header======= */
+
+.header{
   padding: 20px 50px;
+}
+
+.header__inner{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  color: #fff;
 }
-
-.navigation .logo-page {
+.header__logo-link{
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 12px;
+  gap: 9px;
 }
-
-.navigation .logo-page .logo {
-  width: 32px;
-  height: 32px;
+.header__nav{
+  margin-left: auto;
 }
-
-.navigation .logo-page .logo-title {
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-}
-
-.navigation .btn-navigation {
+.header__list{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 10px;
 }
 
-.navigation .btn-navigation button:not(button:last-child) {
+.header__link{
   padding: 12px 20px;
-  background-color: transparent;
 }
 
-.navigation .btn-navigation button:last-child {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+.header__btn{
+  margin-left: 10px;
+}
+
+.header__btn-menu{
+  display: none;
 }
 
 /* ======Hero Section======= */
 
-.hero-section .container {
+.hero-section__inner {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -204,7 +203,7 @@ button:hover {
   margin-top: 20px;
 }
 
-.hero-section__left .btn-secondary {
+.btn__hero-custom {
   margin-top: 30px;
 }
 
@@ -224,6 +223,11 @@ button:hover {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.6;
+}
+
+.hero-section__right-media{
+  width: 100%;
+  object-fit: cover;
 }
 
 .hero-section__right .sub-image {
@@ -251,9 +255,7 @@ button:hover {
   margin-top: 60px;
 }
 
-.trending-collection .body-text-work-sans {
-  margin-top: 10px;
-}
+
 
 .collection-card {
   width: calc((100% - 60px) / 3);
@@ -280,7 +282,12 @@ button:hover {
   border-radius: 20px;
 }
 
-.collection-card .h5-work-sans {
+.collection-card .collection-thumb{
+  width: 100%;
+  object-fit: cover;
+}
+
+.collection-card .collection-card-name {
   margin-top: 15px;
 }
 
@@ -290,10 +297,6 @@ button:hover {
   display: flex;
   align-items: end;
   justify-content: space-between;
-}
-
-.top-rated-artists .title .body-text-work-sans {
-  margin-top: 10px;
 }
 
 .top-rated-artists .title .top-rated-title {
@@ -519,10 +522,6 @@ button:hover {
 
 /* ========How it works======== */
 
-.how-works .body-text-work-sans{
-  margin-top: 10px;
-}
-
 .how-works .work-card-list{
   margin-top: 48px;
   display: flex;
@@ -578,9 +577,6 @@ button:hover {
   border-radius: 20px;
 }
 
-.weekly-digest .container .content .body-text-work-sans{
-  margin-top: 10px;
-}
 
 .weekly-digest .container .content .put-email{
   margin-top: 40px;
@@ -604,7 +600,7 @@ button:hover {
   color:#2B2B2B;
 }
 
-.weekly-digest .container .content .btn-secondary{
+.weekly-digest .container .content .btn-subscribe-weekly{
   position: absolute;
   bottom: 0;
   right: 0;
@@ -672,7 +668,7 @@ footer .content .explore a:first-of-type{
 }
 
 
-footer .content .call-to-action .base-body-work-sans{
+footer .content .call-to-action .desc-weekly{
   color:#CCCCCC;
   margin-top: 25px;
   width: 78%;
@@ -700,7 +696,7 @@ footer .content .call-to-action .put-email input::placeholder{
   color:#2B2B2B;
 }
 
-footer .content .call-to-action .btn-secondary{
+footer .content .call-to-action .btn-subscribe-footer{
   position: absolute;
   bottom: 0;
   right: 0;
