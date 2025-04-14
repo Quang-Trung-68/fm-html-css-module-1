@@ -394,8 +394,6 @@ input{
 }
 
 .browse-categories .categories-item .categories-thumb{
-   background-color: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(15px);
   object-fit: cover;
   width: 100%;
   z-index: -3;
@@ -413,7 +411,7 @@ input{
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   z-index: 1;
 }
 
