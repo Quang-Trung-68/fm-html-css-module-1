@@ -1,6 +1,9 @@
 /* * *  PC Thiet bi lon hon (min-width: 1024.02px) * * */
 @media (min-width: 1024.02px) {
-  .hero-section-mobile {
+  .btn-ranking-mobile{
+    display: none;
+  }
+  .btn-discover-see-all-mobile{
     display: none;
   }
 }
@@ -37,10 +40,9 @@
   .header {
     padding: 15px 50px;
   }
+
   /* =====Hero===== */
-  .hero-section-mobile {
-    display: none;
-  }
+
   .hero-section__left h1 {
     font-weight: 600;
     font-size: 3.8rem;
@@ -83,6 +85,15 @@
   }
 
   /* ======Top artist====== */
+
+  .btn-ranking-mobile{
+    display: none;
+  }
+
+  .btn-discover-see-all-mobile{
+    display: none;
+  }
+
   .top-rated-artists .artist-card-list {
     margin-top: 40px;
   }
@@ -231,6 +242,9 @@
   }
 
   /* ======Hero====== */
+  .hero-section-mobile {
+    display: block;
+  }
   .hero-section__inner {
     flex-direction: column;
   }

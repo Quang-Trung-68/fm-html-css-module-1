@@ -188,6 +188,10 @@ button:hover {
 
 /* ======Hero Section======= */
 
+.hero-section-mobile {
+  display: none;
+}
+
 .hero-section__inner {
   width: 100%;
   display: flex;
@@ -223,6 +227,7 @@ button:hover {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.6;
+  white-space: nowrap;
 }
 
 .hero-section__right-media{
@@ -421,6 +426,11 @@ button:hover {
 }
 
 /* =======Discover more NFTs======= */
+
+.discover-nfts .btn-discover-see-all{
+  background-color: transparent;
+  border: 2px solid #a259ff;
+}
 
 .discover-nfts .discover-nft-list {
   margin-top: 60px;
