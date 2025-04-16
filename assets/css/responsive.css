@@ -1,15 +1,9 @@
 /* * *  PC Thiet bi lon hon (min-width: 1024.02px) * * */
 @media (min-width: 1024.02px) {
-  .btn-ranking-mobile{
-    display: none;
-  }
-  .btn-discover-see-all-mobile{
-    display: none;
-  }
 }
 
-/* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
-@media screen and (max-width: 991px) {
+/* * * Thiet bi Tablet & Mobile: @media screen and (max-width: 991px) * * */
+@media screen and (max-width: 990.98px) {
   .header__list,
   .header__btn {
     display: none;
@@ -19,6 +13,7 @@
     font-size: 2.8rem;
     line-height: 1.4;
   }
+
   .container .heading-h2-desc {
     font-size: 1.6rem;
     line-height: 1.4;
@@ -30,8 +25,8 @@
     border: none;
   }
 }
-/*  * * Thiet bi rieng Table: @media screen and (min-width: 768px) and (max-width: 991px) * * */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+/*  * * Thiet bi rieng Tablet: @media screen and (min-width: 768px) and (max-width: 991px) * * */
+@media screen and (min-width: 768px) and (max-width: 990.98px) {
   .container {
     max-width: 690px;
     padding: 72px 0;
@@ -74,6 +69,7 @@
   }
 
   /* =====Trending collection===== */
+
   .collection-card-row {
     margin-top: 40px;
   }
@@ -85,14 +81,6 @@
   }
 
   /* ======Top artist====== */
-
-  .btn-ranking-mobile{
-    display: none;
-  }
-
-  .btn-discover-see-all-mobile{
-    display: none;
-  }
 
   .top-rated-artists .artist-card-list {
     margin-top: 40px;
@@ -106,6 +94,7 @@
   .top-rated-artists .artist-card-item .avatar-artist {
     max-width: 60px;
   }
+
   .top-rated-artists .artist-card-item .name-creator {
     align-items: start;
     margin-top: 0;
@@ -115,12 +104,14 @@
   .top-rated-artists .artist-card-item .name-creator p:last-child {
     column-gap: 5px;
   }
+
   .top-rated-artists .card-item-order {
     top: 13px;
     left: 12px;
   }
 
   /* =====Browse categories===== */
+
   .browse-categories .categories-list {
     margin-top: 40px;
   }
@@ -134,6 +125,7 @@
   }
 
   /* =======Discover======= */
+
   .discover-nfts .discover-nft-list {
     margin-top: 40px;
   }
@@ -145,6 +137,7 @@
   }
 
   /* ======NFT Highlight====== */
+
   .nft-highlight {
     background: linear-gradient(to top, #a259ff, #a259ff00),
       url(../img/mushHLTablet.png);
@@ -159,6 +152,7 @@
   }
 
   /* =====How works===== */
+
   .how-works .work-card-list {
     margin-top: 40px;
   }
@@ -200,23 +194,29 @@
   }
 
   /* ======Footer====== */
+
   .footer .content {
     flex-direction: column;
     row-gap: 30px;
   }
+
   .footer .content .contact,
   .footer .content .explore {
     width: 100%;
   }
+
   .footer .container-footer {
     padding: 40px 0;
   }
+
   .footer .footer__inner {
     padding: 0 0 49px;
   }
+
   .footer .content .call-to-action .put-email {
     width: 60%;
   }
+
   .footer .content .contact p:first-of-type {
     margin-top: 20px;
     width: 100%;
@@ -231,23 +231,29 @@
     width: 100%;
   }
 }
+
 /* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 767.98px) {
   .container {
     max-width: 100%;
     padding: 40px 30px;
   }
+
   .header {
     padding: 40px 30px;
   }
 
   /* ======Hero====== */
+
   .hero-section-mobile {
     display: block;
   }
+
   .hero-section__inner {
     flex-direction: column;
   }
+
   .hero-section__left {
     width: 100%;
   }
@@ -256,6 +262,7 @@
     font-size: 2.8rem;
     line-height: 1.4;
   }
+
   .hero-section__inner > .hero-section__right {
     display: none;
   }
@@ -284,6 +291,7 @@
   }
 
   /* =====Trending collection===== */
+
   .collection-card-row {
     margin-top: 40px;
     flex-direction: column;
@@ -298,6 +306,14 @@
   }
 
   /* =====Top artiest===== */
+
+  .btn-ranking-mobile {
+    display: inline-flex;
+  }
+
+  .btn-discover-see-all-mobile {
+    display: inline-flex;
+  }
 
   .top-rated-artists .artist-card-item {
     width: 100%;
@@ -420,23 +436,22 @@
     width: 100%;
     flex-direction: row;
     justify-content: center;
-  }
-  .how-works .work-card-item {
-    padding:20px;
+    padding: 20px;
     gap: 10px;
   }
+
   .how-works .work-card-item .thumb {
-    width:100px;
+    width: 100px;
     object-fit: cover;
   }
-  .how-works .work-card-item .desc-card-item{
+  .how-works .work-card-item .desc-card-item {
     margin-top: 0;
     align-items: flex-start;
     text-align: left;
   }
 
   /* =====Weekly digest===== */
-  .weekly-digest .weekly-digest__inner{
+  .weekly-digest .weekly-digest__inner {
     padding: 0;
     flex-direction: column;
     gap: 30px;
@@ -446,54 +461,56 @@
     width: 100%;
   }
 
-  .weekly-digest .weekly-digest__inner .content .put-email{
+  .weekly-digest .weekly-digest__inner .content .put-email {
     flex-direction: column;
     gap: 16px;
   }
 
-  .weekly-digest .weekly-digest__inner .content .put-email input{
+  .weekly-digest .weekly-digest__inner .content .put-email input {
     padding: 12px 20px;
   }
 
-  .weekly-digest .weekly-digest__inner .content .btn-subscribe-weekly{
+  .weekly-digest .weekly-digest__inner .content .btn-subscribe-weekly {
     position: static;
     padding: 12px 20px;
   }
 
   /* =====Footer===== */
-  .footer .footer__inner{
+  .footer .footer__inner {
     padding: 0;
   }
 
-  .footer .footer__inner .content{
+  .footer .footer__inner .content {
     flex-direction: column;
     row-gap: 30px;
   }
-  .footer .content .contact, .footer .content .explore{
+  .footer .content .contact,
+  .footer .content .explore {
     width: 100%;
   }
 
-  .footer .content .contact p:first-of-type, .footer .content .explore a:first-of-type{
+  .footer .content .contact p:first-of-type,
+  .footer .content .explore a:first-of-type {
     margin-top: 20px;
   }
-  .footer .content .call-to-action .desc-weekly{
+  .footer .content .call-to-action .desc-weekly {
     margin-top: 20px;
     width: 100%;
   }
 
-  .footer .content .call-to-action .btn-subscribe-footer{
+  .footer .content .call-to-action .btn-subscribe-footer {
     position: static;
     padding: 12px 20px;
   }
-  .footer .content .call-to-action .put-email{
+  .footer .content .call-to-action .put-email {
     flex-direction: column;
     row-gap: 16px;
   }
 
-  .footer .content .call-to-action .put-email input{
+  .footer .content .call-to-action .put-email input {
     padding: 12px 20px;
   }
-  .footer .footer__inner{
+  .footer .footer__inner {
     padding: 0 0 30px;
   }
 }

@@ -55,6 +55,13 @@ input{
   transition: 0.3s ease-in;
 }
 
+.btn-ranking-mobile {
+  display: none;
+}
+.btn-discover-see-all-mobile {
+  display: none;
+}
+
 .heading-h2-desc {
   margin-top: 10px;
 }
@@ -494,11 +501,11 @@ input{
   margin-top: 0;
 }
 
-.nft-highlight .h2-work-sans {
+.nft-highlight .nft-highlight-title {
   margin-top: 30px;
 }
 
-.nft-highlight .btn-secondary {
+.nft-highlight .btn-see-nft {
   margin-top: 30px;
   background-color: #fff;
   color: #000;
@@ -526,7 +533,7 @@ input{
   gap: 10px;
 }
 
-.nft-highlight .clock-remaining .time-remain .caption-space-mono{
+.nft-highlight .clock-remaining .time-remain .time p:last-child{
   margin-top: 5px;
 }
 
