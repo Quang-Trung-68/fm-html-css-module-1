@@ -194,32 +194,31 @@ input{
   display: none;
 }
 
-/* ======Hero Section======= */
-
-.hero-section-mobile {
+/* Hero Section */
+.hero__mobile-card {
   display: none;
 }
 
-.hero-section__inner {
+.hero__content {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.hero-section__left {
+.hero__info {
   width: calc(100% / 2 - 15px);
 }
 
-.hero-section__left .desc {
+.hero__description {
   margin-top: 20px;
 }
 
-.btn__hero-custom {
+.hero__cta {
   margin-top: 30px;
 }
 
-.hero-section__additional-info {
+.hero__stats {
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -227,30 +226,30 @@ input{
   gap: 30px;
 }
 
-.hero-section__additional-info .block {
+.hero__stat-item {
   width: calc((100% - 60px) / 3);
 }
 
-.hero-section__additional-info .title-case {
+.hero__stat-label {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.6;
   white-space: nowrap;
 }
 
-.hero-section__right-media{
+.hero__preview-image {
   width: 100%;
   object-fit: cover;
 }
 
-.hero-section__right .sub-image {
+.hero__card-details {
   background-color: #3b3b3b;
   padding: 22px 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.artist-card {
+.hero__artist {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -259,8 +258,7 @@ input{
 }
 
 /* ====Trending collection===== */
-
-.collection-card-row {
+.trending__grid {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -268,13 +266,11 @@ input{
   margin-top: 60px;
 }
 
-
-
-.collection-card {
+.trending__card {
   width: calc((100% - 60px) / 3);
 }
 
-.collection-card .avatar-group {
+.trending__card-gallery {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -282,12 +278,12 @@ input{
   margin-top: 15px;
 }
 
-.collection-card .avatar-group * {
+.trending__card-gallery * {
   display: inline-block;
   width: calc((100% - 30px) / 3);
 }
 
-.collection-card .avatar-group .box-more-image {
+.trending__card-count {
   background-color: #a259ff;
   display: flex;
   align-items: center;
@@ -295,35 +291,43 @@ input{
   border-radius: 20px;
 }
 
-.collection-card .collection-thumb{
+.trending__card-image {
   width: 100%;
   object-fit: cover;
 }
 
-.collection-card .collection-card-name {
+.trending__card-name {
   margin-top: 15px;
+}
+
+.trending__artist {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 /* =====Top Rated Artists===== */
 
-.top-rated-artists .title {
+.creators__header {
   display: flex;
   align-items: end;
   justify-content: space-between;
 }
 
-.top-rated-artists .title .top-rated-title {
+.creators__heading {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
 
-.top-rated-artists .title .btn-ranking {
+.creators__btn-desktop {
   background-color: transparent;
   border: 2px solid #a259ff;
 }
 
-.top-rated-artists .artist-card-list {
+.creators__grid {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -332,7 +336,7 @@ input{
   margin-top: 60px;
 }
 
-.top-rated-artists .artist-card-item {
+.creators__card {
   width: calc((100% - 90px) / 4);
   background-color: #3b3b3b;
   border-radius: 20px;
@@ -343,19 +347,19 @@ input{
   align-items: center;
 }
 
-.top-rated-artists .artist-card-item .name-creator {
+.creators__info {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.top-rated-artists .artist-card-item .avatar-artist{
+.creators__avatar {
   object-fit: cover;
   width: 100%;
 }
 
-.top-rated-artists .artist-card-item .name-creator p:last-child {
+.creators__info p:last-child {
   margin-top: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -363,8 +367,7 @@ input{
   row-gap: 5px;
 }
 
-
-.top-rated-artists .card-item-order {
+.creators__rank {
   position: absolute;
   top: 18px;
   left: 20px;
@@ -380,7 +383,7 @@ input{
 
 /* =====Browse Categories====== */
 
-.browse-categories .categories-list {
+.browse-categories__list {
   margin-top: 60px;
   display: flex;
   align-items: stretch;
@@ -389,32 +392,32 @@ input{
   gap: 30px;
 }
 
-.browse-categories .categories-item {
+.browse-categories__item {
   width: calc((100% - 90px) / 4);
   border-radius: 20px;
   background-color: #3b3b3b;
   overflow: hidden;
 }
 
-.browse-categories .categories-item .thumb-icon {
+.browse-categories__thumb-wrapper {
   position: relative;
 }
 
-.browse-categories .categories-item .categories-thumb{
+.browse-categories__image {
   object-fit: cover;
   width: 100%;
   z-index: -3;
 }
 
-.browse-categories .categories-item .name-categories {
+.browse-categories__name {
   padding: 20px 30px 25px;
 }
 
-.blured-overlay{
+.browse-categories__blur-container {
   position: relative;
 }
 
-.blured-overlay .overlay{
+.browse-categories__overlay {
   position: absolute;
   inset: 0;
   background: rgba(255, 255, 255, 0.1);
@@ -422,23 +425,27 @@ input{
   z-index: 1;
 }
 
-
-.browse-categories .categories-item .thumb-icon svg {
+.browse-categories__icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-
 /* =======Discover more NFTs======= */
 
-.discover-nfts .btn-discover-see-all{
+.discover-nfts__button {
   background-color: transparent;
   border: 2px solid #a259ff;
 }
 
-.discover-nfts .discover-nft-list {
+.discover-nfts__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discover-nfts__list {
   margin-top: 60px;
   display: flex;
   align-items: center;
@@ -446,44 +453,57 @@ input{
   gap: 30px;
 }
 
-.discover-nfts .discover-nft-item {
+.discover-nfts__item {
   width: calc((100% - 60px) / 3);
   background-color: #3b3b3b;
   border-radius: 20px;
   overflow: hidden;
 }
 
-.discover-nfts .discover-nft-item .thumb {
+.discover-nfts__image {
   object-fit: cover;
   width: 100%;
   height: 296px;
 }
 
-.discover-nfts .discover-nft-item .content {
+.discover-nfts__content {
   padding: 20px 30px 25px;
 }
 
-.discover-nfts .discover-nft-item .content .value {
+.discover-nfts__artist {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.discover-nfts__values {
   margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.discover-nfts .discover-nft-item .content .value .value-price {
+.discover-nfts__label {
   color: #858584;
 }
 
-.discover-nfts .discover-nft-item .content .value .value-eth {
+.discover-nfts__price-value,
+.discover-nfts__bid-value {
   margin-top: 8px;
 }
 
-.discover-nfts .discover-nft-item .content .bid {
+.discover-nfts__bid-group {
   text-align: right;
 }
 
-/* ======NFT Highlight======= */
+/* Giữ lại class gốc cho tương thích ngược */
+.btn-discover-see-all {
+  background-color: transparent;
+  border: 2px solid #a259ff;
+}
 
+/* ======NFT Highlight======= */
 .nft-highlight {
   background: linear-gradient(to top, #a259ff, #a259ff00),
     url(../img/mushHL.png);
@@ -492,8 +512,7 @@ input{
   background-repeat: no-repeat;
 }
 
-
-.nft-highlight .artist-card {
+.nft-highlight__artist {
   background-color: #3b3b3b;
   display: inline-flex;
   padding: 10px 20px;
@@ -501,22 +520,22 @@ input{
   margin-top: 0;
 }
 
-.nft-highlight .nft-highlight-title {
+.nft-highlight__title {
   margin-top: 30px;
 }
 
-.nft-highlight .btn-see-nft {
+.nft-highlight__button {
   margin-top: 30px;
   background-color: #fff;
   color: #000;
 }
 
-.nft-highlight .block-cta {
+.nft-highlight__block {
   margin-top: 360px;
   position: relative;
 }
 
-.nft-highlight .clock-remaining {
+.nft-highlight__auction {
   padding: 30px;
   position: absolute;
   bottom: 0;
@@ -525,7 +544,8 @@ input{
   border-radius: 20px;
   backdrop-filter: blur(10px);
 }
-.nft-highlight .clock-remaining .time-remain {
+
+.nft-highlight__timer {
   margin-top: 10px;
   display: flex;
   align-items: start;
@@ -533,14 +553,13 @@ input{
   gap: 10px;
 }
 
-.nft-highlight .clock-remaining .time-remain .time p:last-child{
+.nft-highlight__time-unit p:last-child {
   margin-top: 5px;
 }
 
-
 /* ========How it works======== */
 
-.how-works .work-card-list{
+.works__list {
   margin-top: 48px;
   display: flex;
   gap: 30px;
@@ -548,7 +567,7 @@ input{
   justify-content: space-between;
 }
 
-.how-works .work-card-item{
+.works__item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -558,16 +577,16 @@ input{
   padding: 0 30px 30px;
 }
 
-.how-works .work-card-item .wrapper-thumb{
+.works__thumb-wrapper {
   padding: 10px;
 }
 
-.how-works .work-card-item .thumb{
+.works__thumb {
   width: 100%;
   object-fit: cover;
 }
 
-.how-works .work-card-item .desc-card-item{
+.works__content {
   margin-top: 20px;
   display: flex;
   row-gap: 10px;
@@ -576,14 +595,13 @@ input{
   text-align: center;
 }
 
-
 /* ======Join our weekly digest====== */
 
-.container-weekly-digest{
+.digest__container {
   padding-top: 40px;
 }
 
-.weekly-digest .weekly-digest__inner{
+.digest__inner {
   padding: 60px;
   display: flex;
   align-items: center;
@@ -593,18 +611,17 @@ input{
   border-radius: 20px;
 }
 
-.weekly-digest .weekly-digest__inner > *{
+.digest__inner > * {
   width: calc((100% - 80px)/2);
 }
 
-.weekly-digest .weekly-digest__inner .image img{
+.digest__image img {
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
 }
 
-
-.weekly-digest .weekly-digest__inner .content .put-email{
+.digest__form {
   margin-top: 40px;
   display: flex;
   align-items: stretch;
@@ -612,7 +629,7 @@ input{
   position: relative;
 }
 
-.weekly-digest .weekly-digest__inner .content .put-email input{
+.digest__input {
   border-radius: 20px;
   width: 100%;
   padding: 19px 20px;
@@ -622,11 +639,11 @@ input{
   border: 2px solid #fff;
 }
 
-.weekly-digest .weekly-digest__inner .content .put-email input::placeholder{
-  color:#2B2B2B;
+.digest__input::placeholder {
+  color: #2B2B2B;
 }
 
-.weekly-digest .weekly-digest__inner .content .btn-subscribe-weekly{
+.digest__button {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -634,77 +651,77 @@ input{
 
 /* =====footer===== */
 
-.footer{
+.footer {
   background-color: #3B3B3B;
 }
 
-.container-footer{
+.footer__container {
   padding: 40px 115px;
 }
 
-.footer .footer__inner{
+.footer__inner {
   padding: 0 31px 30px;
   border-bottom: 1px solid #858584;
 }
 
-.footer .content{
+.footer__content {
   display: flex;
   justify-content: space-between;
 }
 
-.footer .content .contact{
+.footer__contact {
   width: 33%;
 }
 
-.footer .content .explore{
+.footer__nav {
   width: 24%;
 }
 
-.footer .content .contact .logo-page{
+.footer__logo {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.footer .content .contact p:first-of-type{
+.footer__contact .footer__text:first-of-type {
   margin-top: 30px;
-  color:#CCCCCC;
+  color: #CCCCCC;
   width: 73%;
 }
 
-.footer .content .contact p:nth-of-type(2){
+.footer__contact .footer__text:nth-of-type(2) {
   margin-top: 20px;
-  color:#CCCCCC;
+  color: #CCCCCC;
 }
-.footer .content .contact .contact-social{
+
+.footer__socials {
   margin-top: 15px;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.footer .content .explore{
+.footer__nav {
   display: flex;
   flex-direction: column;
 }
 
-.footer .content .explore a{
+.footer__nav-link {
   margin-top: 20px;
-  color:#CCCCCC;
+  color: #CCCCCC;
 }
 
-.footer .content .explore a:first-of-type{
+.footer__nav-link:first-of-type {
   margin-top: 25px;
 }
 
-
-.footer .content .call-to-action .desc-weekly{
-  color:#CCCCCC;
+.footer__subscribe-desc {
+  color: #CCCCCC;
   margin-top: 25px;
   width: 78%;
 }
 
-.footer .content .call-to-action .put-email{
+.footer__form {
   margin-top: 20px;
   display: flex;
   align-items: stretch;
@@ -712,7 +729,7 @@ input{
   position: relative;
 }
 
-.footer .content .call-to-action .put-email input{
+.footer__input {
   border-radius: 20px;
   width: 100%;
   padding: 19px 20px;
@@ -722,17 +739,17 @@ input{
   border: 2px solid #fff;
 }
 
-.footer .content .call-to-action .put-email input::placeholder{
-  color:#2B2B2B;
+.footer__input::placeholder {
+  color: #2B2B2B;
 }
 
-.footer .content .call-to-action .btn-subscribe-footer{
+.footer__button {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.footer .copyright{
+.footer__copyright {
   margin-top: 20px;
-  color:#CCCCCC;
+  color: #CCCCCC;
 }
