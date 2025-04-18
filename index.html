@@ -1217,19 +1217,24 @@
         <p class="body-text-work-sans heading-h2-desc">
           Get exclusive promotions & updates straight to your inbox.
         </p>
-        <div class="digest__form">
-          <input
-            placeholder="Enter your email here"
-            type="email"
-            name="userEmail"
-            id="userEmail"
-            class="digest__input"
-          />
-          <a href="#!" class="btn btn-secondary digest__button">
-            <img src="./assets/icon/mail.svg" />
-            <span>Subscribe</span>
-          </a>
-        </div>
+        <form method="post" action="#!">
+          <div class="digest__form">
+            <div class="digest__backgroundinput">
+              <input
+                placeholder="Enter Your Email Address"
+                type="email"
+                name="userEmail"
+                id="userEmail"
+                class="digest__input"
+                autocomplete="off"
+                />
+              </div>
+              <a href="#!" class="btn btn-secondary digest__button">
+                <img src="./assets/icon/mail.svg" />
+                <span>Subscribe</span>
+              </a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -1301,16 +1306,23 @@
           <p class="base-body-work-sans footer__subscribe-desc">
             Get exclusive promotions & updates straight to your inbox.
           </p>
-          <div class="footer__form">
-            <input
-              placeholder="Enter your email here"
-              type="email"
-              name="userEmail"
-              id="footerEmail"
-              class="footer__input"
-            />
-            <a href="#!" class="btn btn-secondary footer__button">Subscribe</a>
-          </div>
+          <form method="post" action="#!">
+            <div class="footer__form">
+              <div class="footer__backgroundinput">
+                <input
+                  placeholder="Enter your email here"
+                  type="email"
+                  name="userEmail"
+                  id="userEmail"
+                  class="footer__input"
+                  autocomplete="off"
+                  />
+                </div>
+                <a href="#!" class="btn btn-secondary footer__button">
+                  <span>Subscribe</span>
+                </a>
+            </div>
+          </form>
         </div>
       </div>
     </div>

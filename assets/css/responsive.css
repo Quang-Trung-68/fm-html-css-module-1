@@ -155,7 +155,7 @@
   }
 
   .nft-highlight__block {
-    margin-top: 360px;
+    margin-top: 288px;
     padding: 0 2px;
   }
 
@@ -188,8 +188,9 @@
   }
 
   .digest__button {
-    position: static;
-    padding: 12px;
+    width: 100%;
+    padding: 12px 0px;
+    height: 46px;
   }
   .digest__form {
     display: flex;
@@ -197,8 +198,14 @@
     row-gap: 16px;
   }
 
-  .digest__input {
-    padding: 12px 20px;
+  .digest__form::after{
+    display: none;
+  }
+
+  .digest__backgroundinput{
+    padding: 16px 20px;
+    height: 46px;
+    width: 100%;
   }
 
   /* ======Footer====== */
@@ -512,13 +519,20 @@
     gap: 16px;
   }
 
-  .digest__input {
-    padding: 12px 20px;
+  .digest__form::after{
+    display: none;
+  }
+
+  .digest__backgroundinput{
+    padding: 16px 20px; 
+    width: 100%;
+    height: 46px;
   }
 
   .digest__button {
-    position: static;
-    padding: 12px 20px;
+    padding: 12px 0px;
+    width: 100%;
+    height: 46px;
   }
   /* =====Footer===== */
 
@@ -545,16 +559,25 @@
   }
 
   .footer__button {
-    position: static;
-    padding: 12px 20px;
+    height: 46px;
+    width: 100%;
+    padding: 12px 0px;
   }
 
   .footer__form {
     flex-direction: column;
     row-gap: 16px;
   }
+  .footer__backgroundinput{
+    padding: 16px 20px;
+    width: 100%;
+    height: 46px;
+  }
+
+  .footer__form::after{
+    display: none;
+  }
 
   .footer__input {
-    padding: 12px 20px;
   }
 }
