@@ -225,11 +225,12 @@
   }
 
   .footer__inner {
-    padding: 0 0 49px;
+    padding: 0 0 50px;
   }
 
   .footer__form {
     width: 60%;
+    margin-top: 20px;
   }
 
   .footer__text:first-of-type {
@@ -549,9 +550,10 @@
     width: 100%;
   }
 
-  .footer__contact .footer__text:first-of-type,
+  .footer__text:first-of-type,
   .footer__nav-link:first-of-type {
     margin-top: 20px;
+    width: 100%;
   }
   .footer__subscribe-desc {
     margin-top: 20px;
@@ -567,6 +569,7 @@
   .footer__form {
     flex-direction: column;
     row-gap: 16px;
+    margin-top: 20px;
   }
   .footer__backgroundinput{
     padding: 16px 20px;
