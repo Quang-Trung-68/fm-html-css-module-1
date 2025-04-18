@@ -87,7 +87,7 @@ input {
 }
 
 .btn:hover {
-  opacity: 0.8;
+  cursor: pointer;
 }
 
 /* text css common */
@@ -250,7 +250,7 @@ input {
 
 .hero__card-details {
   background-color: #3b3b3b;
-  padding: 22px 20px;
+  padding: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
@@ -320,6 +320,7 @@ input {
   display: flex;
   align-items: end;
   justify-content: space-between;
+  gap: 100px;
 }
 
 .creators__heading {
@@ -362,7 +363,7 @@ input {
 
 .creators__avatar {
   object-fit: cover;
-  width: 100%;
+  width:120px;
 }
 
 .creators__info p:last-child {
@@ -449,6 +450,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 100px;
 }
 
 .discover-nfts__list {
@@ -586,7 +588,6 @@ input {
 }
 
 .works__thumb-wrapper {
-  padding: 10px;
 }
 
 .works__thumb {
@@ -639,7 +640,7 @@ input {
   position: relative;
 }
 
-.digest__backgroundinput {
+.digest__background-input {
   display: inline-flex;
   align-items: stretch;
   justify-content: space-between;
@@ -757,12 +758,11 @@ input {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 12px;
   position: relative;
 }
 
-.footer__backgroundinput {
+.footer__background-input {
   display: inline-flex;
   align-items: stretch;
   justify-content: space-between;
@@ -778,7 +778,7 @@ input {
   position: absolute;
   top: 0;
   right:150px;
-  width: 90px;
+  width: 110px;
   height: 60px;
   background-color: #fff;
   z-index: 1;

@@ -29,7 +29,11 @@
 @media screen and (min-width: 768px) and (max-width: 990.98px) {
   .container {
     max-width: 690px;
-    padding: 72px 0;
+    padding: 40px 0;
+  }
+
+  .hero__container{
+    padding: 80px 0;
   }
 
   .header {
@@ -118,12 +122,16 @@
     left: 12px;
   }
 
+  .creators__card-none-tablet{
+    display: none;
+  }
+
   /* =====Browse categories===== */
 
   .browse-categories__list {
     margin-top: 40px;
   }
-  .browse-categories__thumb-wrapper svg {
+  .browse-categories__icon {
     width: 80px;
     height: 80px;
   }
@@ -155,8 +163,9 @@
   }
 
   .nft-highlight__block {
-    margin-top: 288px;
+    margin-top: 320px;
     padding: 0 2px;
+    margin-bottom: 20px;
   }
 
   /* =====How works===== */
@@ -164,13 +173,22 @@
   .works__list {
     margin-top: 40px;
   }
+  .works__title{
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .works__text{
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
 
   .works__item {
     padding: 0 20px 30px;
   }
 
   .works__thumb-wrapper {
-    padding: 10px 5px 5px;
+    padding: 10px 5px 0px;
   }
 
   /* =====Weekly digest===== */
@@ -202,7 +220,7 @@
     display: none;
   }
 
-  .digest__backgroundinput{
+  .digest__background-input{
     padding: 16px 20px;
     height: 46px;
     width: 100%;
@@ -257,7 +275,7 @@
   }
 
   .header {
-    padding: 40px 30px;
+    padding: 15px 30px;
   }
 
   /* ======Hero====== */
@@ -267,8 +285,20 @@
     object-fit: cover;
   }
 
+  .hero__mobile-details{
+    padding: 20px;
+    background-color: #3B3B3B;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
   .hero__cta {
     width: 100%;
+    margin-top: 40px;
+  }
+
+  .hero__stats{
+    margin-top: 40px;
   }
 
   .hero__mobile-card {
@@ -376,6 +406,9 @@
     width: 100%;
     margin-top: 40px;
   }
+  .creators__card-none-tablet, .creators__card-none-mobile{
+    display: none;
+  }
 
   /* =====Categories===== */
 
@@ -432,6 +465,11 @@
     line-height: 1.1;
   }
 
+  .discover-nfts__price-value, .discover-nfts__bid-value{
+    font-size: 1.2rem;
+    line-height: 1.1;
+  }
+
   /*===== NFT Highlight =====*/
 
   .nft-highlight {
@@ -479,7 +517,7 @@
     flex-direction: row;
     justify-content: center;
     padding: 20px;
-    gap: 10px;
+    gap: 20px;
   }
 
   .works__thumb {
@@ -524,7 +562,7 @@
     display: none;
   }
 
-  .digest__backgroundinput{
+  .digest__background-input{
     padding: 16px 20px; 
     width: 100%;
     height: 46px;
@@ -571,7 +609,7 @@
     row-gap: 16px;
     margin-top: 20px;
   }
-  .footer__backgroundinput{
+  .footer__background-input{
     padding: 16px 20px;
     width: 100%;
     height: 46px;
@@ -581,6 +619,4 @@
     display: none;
   }
 
-  .footer__input {
-  }
 }
