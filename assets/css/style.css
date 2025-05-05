@@ -54,6 +54,11 @@ input {
   transition: 0.3s ease-in;
 }
 
+.btn:hover{
+  background-color: #a259dd;
+  color: #fff;
+}
+
 .heading-h2-desc {
   margin-top: 10px;
 }
@@ -88,6 +93,14 @@ input {
 
 .btn:hover {
   cursor: pointer;
+}
+
+.trending__card, .creators__card, .browse-categories__item, .discover-nfts__item,.works__item{
+  transition: transform 0.4s;
+}
+
+.trending__card:hover, .creators__card:hover, .browse-categories__item:hover, .discover-nfts__item:hover,.works__item:hover{
+  transform: translateY(-3%);
 }
 
 /* text css common */
@@ -194,6 +207,10 @@ input {
 .header__link {
   padding: 12px 20px;
   white-space: nowrap;
+}
+
+.header__link:hover{
+  opacity: 0.8;
 }
 
 .header__btn {
@@ -616,7 +633,6 @@ input {
 .digest__inner {
   padding: 60px;
   display: flex;
-  align-items: center;
   gap: 80px;
   justify-content: space-between;
   background-color: #3b3b3b;
@@ -736,6 +752,11 @@ input {
   gap: 10px;
 }
 
+.footer__social-icon:hover{
+  background-color: #2b2b2b;
+  border-radius: 25%;
+}
+
 .footer__nav {
   display: flex;
   flex-direction: column;
@@ -744,6 +765,10 @@ input {
 .footer__nav-link {
   margin-top: 20px;
   color: #cccccc;
+}
+
+.footer__nav-link:hover{
+  text-decoration: underline;
 }
 
 .footer__nav-link:first-of-type {

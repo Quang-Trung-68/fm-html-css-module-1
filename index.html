@@ -118,13 +118,13 @@
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item">
-              <a href="#!" class="header__link">Marketplace</a>
+              <a href="#trending" class="header__link">Marketplace</a>
             </li>
             <li class="header__item">
-              <a href="#!" class="header__link">Rankings</a>
+              <a href="#ranking" class="header__link">Rankings</a>
             </li>
             <li class="header__item">
-              <a href="#!" class="header__link">Connect a wallet</a>
+              <a href="#works" class="header__link">Connect a wallet</a>
             </li>
           </ul>
         </nav>
@@ -218,7 +218,7 @@
       </section>
 
       <!-- Trending collection -->
-      <section class="trending">
+      <section class="trending" id="trending">
         <div class="container">
           <h2 class="h3-work-sans heading-h2">Trending Collection</h2>
           <p class="body-text-work-sans heading-h2-desc">
@@ -344,7 +344,7 @@
       </section>
 
       <!-- Top Rated Artists -->
-      <section class="creators">
+      <section class="creators" id="ranking">
         <div class="container">
           <div class="creators__header">
             <div class="creators__heading">
@@ -1190,7 +1190,7 @@
       </section>
 
       <!-- How it works -->
-      <section class="works">
+      <section class="works" id="works">
         <div class="container">
           <h2 class="h3-work-sans heading-h2">How it works</h2>
           <p class="body-text-work-sans heading-h2-desc">
@@ -1248,6 +1248,7 @@
           </div>
         </div>
       </section>
+
       <!-- Join our weekly digest -->
       <section class="digest">
         <div class="container digest__container">
@@ -1273,6 +1274,7 @@
                       id="userEmail"
                       class="digest__input"
                       autocomplete="off"
+                      required
                     />
                   </div>
                   <a href="#!" class="btn btn-secondary digest__button">
@@ -1372,6 +1374,7 @@
                         id="userEmail"
                         class="footer__input"
                         autocomplete="off"
+                        required
                       />
                     </div>
                     <a href="#!" class="btn btn-secondary footer__button">
