@@ -647,6 +647,10 @@ input {
   width: calc((100% - 80px) / 2);
 }
 
+.digest__image{
+  display: flex;
+}
+
 .digest__image img {
   width: 100%;
   object-fit: cover;
