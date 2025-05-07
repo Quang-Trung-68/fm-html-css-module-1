@@ -182,7 +182,7 @@ input {
   padding: 20px 50px;
   z-index: 99;
   position: sticky;
-  top: 0;
+  top: -15px;
   background: #2b2b2b;
 }
 
@@ -211,6 +211,10 @@ input {
 
 .header__link:hover{
   opacity: 0.8;
+}
+
+.header__logo-title{
+  padding-top: 6px;
 }
 
 .header__btn {
@@ -834,4 +838,8 @@ input {
 .footer__copyright {
   margin-top: 20px;
   color: #cccccc;
+}
+
+.footer__logo-text{
+  padding-top: 6px;
 }
