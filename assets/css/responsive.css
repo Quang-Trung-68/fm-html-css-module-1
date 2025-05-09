@@ -1,6 +1,5 @@
 /* * *  PC Thiet bi lon hon (min-width: 1024.02px) * * */
 @media (min-width: 1024.02px) {
-  
 }
 
 /* * * Thiet bi Tablet & Mobile: @media screen and (max-width: 991px) * * */
@@ -9,14 +8,14 @@
   .header__btn {
     display: none;
   }
-  .dropdown-menu-mobile{
+  .dropdown-menu-mobile {
     display: block;
     position: fixed;
-    left:0;
+    left: 0;
     top: 0;
   }
 
-  .dropdown-menu-mobile{
+  .dropdown-menu-mobile {
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
@@ -26,7 +25,7 @@
     width: auto;
   }
 
-  .header__btn-menu:has(input:checked) ~ .dropdown-menu-mobile{
+  .header__btn-menu:has(input:checked) ~ .dropdown-menu-mobile {
     opacity: 1;
     visibility: visible;
     display: flex;
@@ -34,65 +33,73 @@
     row-gap: 10px;
   }
 
-  .dropdown-menu-mobile .header__nav{
+  /* prevent scroll when open menu dropdown */
+
+  /* body:has(input:checked) {
+    overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  } */
+
+  .dropdown-menu-mobile .header__nav {
     margin-left: 0;
   }
 
-  .dropdown-menu-mobile .header__logo-link{
+  .dropdown-menu-mobile .header__logo-link {
     margin-top: 10px;
   }
 
-  .dropdown-menu-mobile .dropdown-logo-btn-close{
+  .dropdown-menu-mobile .dropdown-logo-btn-close {
     display: flex;
     gap: 20px;
   }
-  .header__btn-close-menu{
+  .header__btn-close-menu {
     margin: 10px;
   }
 
-  .header__btn-close-menu:hover{
-    color:#2b2b2b
+  .header__btn-close-menu:hover {
+    color: #2b2b2b;
   }
 
-  .dropdown-menu-mobile .header__btn{
+  .dropdown-menu-mobile .header__btn {
     margin-left: 0;
   }
 
-  .dropdown-menu-mobile label{
+  .dropdown-menu-mobile label {
     margin-left: auto;
   }
 
-  .dropdown-menu-mobile .header__link{
+  .dropdown-menu-mobile .header__link {
     width: 100%;
     padding: 20px;
   }
 
-  .dropdown-menu-mobile .header__link:hover{
+  .dropdown-menu-mobile .header__link:hover {
     background-color: #3b3b3b;
   }
 
-  .header__btn-menu:has(input:checked) .header__btn-icon{
+  .header__btn-menu:has(input:checked) .header__btn-icon {
     opacity: 0;
     visibility: hidden;
   }
 
-  body:has(input:checked) .overlay-menu-dropdown{
+  body:has(input:checked) .overlay-menu-dropdown {
     opacity: 1;
     visibility: visible;
     z-index: 1;
   }
 
-
-  .header__btn-mobile{
+  .header__btn-mobile {
     display: inline-flex;
     margin-top: 50px;
   }
-  .header__list-mobile{
+  .header__list-mobile {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
   }
-  .header__link{
+  .header__link {
     display: inline-block;
   }
 
@@ -106,12 +113,11 @@
     line-height: 1.4;
   }
 
-   .header__btn-menu {
+  .header__btn-menu {
     display: block;
     background-color: #2b2b2b;
     border: none;
   }
-  
 }
 /*  * * Thiet bi rieng Tablet: @media screen and (min-width: 768px) and (max-width: 991px) * * */
 @media screen and (min-width: 768px) and (max-width: 990.98px) {
@@ -120,7 +126,7 @@
     padding: 40px 0;
   }
 
-  .hero__container{
+  .hero__container {
     padding: 80px 0;
   }
 
@@ -161,7 +167,7 @@
     max-width: 330px;
   }
 
-  .hero__mobile-details{
+  .hero__mobile-details {
     background-color: #3b3b3b;
     padding: 22px 20px;
     border-bottom-left-radius: 20px;
@@ -210,7 +216,7 @@
     left: 12px;
   }
 
-  .creators__card-none-tablet{
+  .creators__card-none-tablet {
     display: none;
   }
 
@@ -261,12 +267,12 @@
   .works__list {
     margin-top: 40px;
   }
-  .works__title{
+  .works__title {
     font-size: 1.7rem;
     line-height: 1.4;
   }
 
-  .works__text{
+  .works__text {
     font-size: 1.4rem;
     line-height: 1.4;
   }
@@ -304,11 +310,11 @@
     row-gap: 16px;
   }
 
-  .digest__form::after{
+  .digest__form::after {
     display: none;
   }
 
-  .digest__background-input{
+  .digest__background-input {
     padding: 16px 20px;
     height: 46px;
     width: 100%;
@@ -365,7 +371,6 @@
   .header {
     padding: 15px 30px;
   }
-  
 
   /* ======Hero====== */
 
@@ -374,9 +379,9 @@
     object-fit: cover;
   }
 
-  .hero__mobile-details{
+  .hero__mobile-details {
     padding: 20px;
-    background-color: #3B3B3B;
+    background-color: #3b3b3b;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
@@ -386,7 +391,7 @@
     margin-top: 40px;
   }
 
-  .hero__stats{
+  .hero__stats {
     margin-top: 40px;
   }
 
@@ -495,7 +500,8 @@
     width: 100%;
     margin-top: 40px;
   }
-  .creators__card-none-tablet, .creators__card-none-mobile{
+  .creators__card-none-tablet,
+  .creators__card-none-mobile {
     display: none;
   }
 
@@ -554,7 +560,8 @@
     line-height: 1.1;
   }
 
-  .discover-nfts__price-value, .discover-nfts__bid-value{
+  .discover-nfts__price-value,
+  .discover-nfts__bid-value {
     font-size: 1.2rem;
     line-height: 1.1;
   }
@@ -573,7 +580,7 @@
     display: none;
   }
 
-  .nft-highlight__auction--mobile{
+  .nft-highlight__auction--mobile {
     display: block;
   }
 
@@ -594,7 +601,7 @@
     width: 100%;
   }
 
-  .nft-highlight__button{
+  .nft-highlight__button {
     width: 100%;
   }
 
@@ -626,12 +633,12 @@
     text-align: left;
   }
 
-  .works__title{
+  .works__title {
     font-size: 1.7rem;
     line-height: 1.4;
   }
 
-  .works__text{
+  .works__text {
     font-size: 1.4rem;
     line-height: 1.4;
   }
@@ -653,12 +660,12 @@
     gap: 16px;
   }
 
-  .digest__form::after{
+  .digest__form::after {
     display: none;
   }
 
-  .digest__background-input{
-    padding: 16px 20px; 
+  .digest__background-input {
+    padding: 16px 20px;
     width: 100%;
     height: 46px;
   }
@@ -704,14 +711,13 @@
     row-gap: 16px;
     margin-top: 20px;
   }
-  .footer__background-input{
+  .footer__background-input {
     padding: 16px 20px;
     width: 100%;
     height: 46px;
   }
 
-  .footer__form::after{
+  .footer__form::after {
     display: none;
   }
-
 }
