@@ -4,6 +4,12 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  
+}
+
+.trending, .creators, .works{
+  scroll-margin-top: 15px ;
 }
 
 body {
@@ -26,6 +32,8 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  pointer-events: auto;         /* Cho phép click */
+  -webkit-tap-highlight-color: transparent; /* Loại bỏ nháy trên mobile */
 }
 
 input {
@@ -52,10 +60,18 @@ input {
   justify-content: center;
   gap: 12px;
   transition: 0.3s ease-in;
+  user-select: none;            /* Ngăn chọn văn bản */
+  -webkit-user-select: none;    /* Safari */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* Internet Explorer/Edge */
+
+  pointer-events: auto;         /* Cho phép click */
+  -webkit-tap-highlight-color: transparent; /* Loại bỏ nháy trên mobile */
 }
 
 .btn:hover{
-  background-color: #a259dd;
+  /* background-color: #a25950; */
+  background-color: #9b9b9b;
   color: #fff;
 }
 
@@ -172,7 +188,7 @@ input {
 .caption-space-mono {
   font-weight: 400;
   font-family: "Space Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   line-height: 1.1;
 }
 
@@ -180,10 +196,27 @@ input {
 
 .header {
   padding: 20px 50px;
-  z-index: 99;
+  z-index: 50;
   position: sticky;
-  top: -15px;
+  top: 0;
   background: #2b2b2b;
+}
+
+.dropdown-menu-mobile .header__btn-menu{
+  margin-left: auto;
+}
+
+.dropdown-menu-mobile,.header__btn-mobile{
+  display: none;
+}
+
+.overlay-menu-dropdown{
+  background-color: #0000005c;
+  position: fixed;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
 }
 
 .header__inner {
@@ -567,16 +600,27 @@ input {
 .nft-highlight__block {
   margin-top: 280px;
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .nft-highlight__auction {
   padding: 30px;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   right: 0;
   background-color: #3b3b3b80;
   border-radius: 20px;
   backdrop-filter: blur(5px);
+}
+
+.nft-highlight__auction--desktop{
+  width: 295px;
+}
+
+.nft-highlight__auction--mobile{
+  display: none;
 }
 
 .nft-highlight__timer {
@@ -682,8 +726,8 @@ input {
   display: inline-block;
   position: absolute;
   top: 0;
-  right: 180px;
-  width: 70px;
+  right: 160px;
+  width: 80px;
   height: 60px;
   background-color: #fff;
   z-index: 1;
@@ -813,8 +857,8 @@ input {
   display: inline-block;
   position: absolute;
   top: 0;
-  right: 150px;
-  width: 110px;
+  right: 120px;
+  width: 140px;
   height: 60px;
   background-color: #fff;
   z-index: 1;

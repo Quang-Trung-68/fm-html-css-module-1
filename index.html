@@ -103,14 +103,21 @@
   </head>
   <body>
     <!-- Header -->
-
     <header class="header">
       <div class="header__inner">
         <!-- Logo -->
         <div class="header__logo">
-          <a href="#!" class="header__logo-link">
-            <img src="./assets/icon/logo-page.svg" alt="NFT logo" class="header__logo-icon" />
-            <img src="./assets/icon/logo-name.svg" alt="NFT Marketplace" class="header__logo-title"/>
+          <a href="./index.html" class="header__logo-link">
+            <img
+              src="./assets/icon/logo-page.svg"
+              alt="NFT logo"
+              class="header__logo-icon"
+            />
+            <img
+              src="./assets/icon/logo-name.svg"
+              alt="NFT Marketplace"
+              class="header__logo-title"
+            />
           </a>
         </div>
         <!-- Navigation -->
@@ -134,9 +141,68 @@
         >
 
         <!-- Button menu -->
-        <button class="header__btn-menu">
-          <img alt="button menu" src="./assets/icon/menu.svg" />
-        </button>
+        <label class="header__btn-menu">
+          <img
+            alt="button menu"
+            src="./assets/icon/menu.svg"
+            class="header__btn-icon"
+          />
+          <input type="checkbox" id="header__btn-menu" hidden />
+        </label>
+
+        <div class="overlay-menu-dropdown"></div>
+        <div class="dropdown-menu-mobile">
+          <!-- Logo -->
+          <div class="dropdown-logo-btn-close">
+            <div class="header__logo">
+              <a href="./index.html" class="header__logo-link">
+                <img
+                  src="./assets/icon/logo-page.svg"
+                  alt="NFT logo"
+                  class="header__logo-icon"
+                />
+                <img
+                  src="./assets/icon/logo-name.svg"
+                  alt="NFT Marketplace"
+                  class="header__logo-title"
+                />
+              </a>
+            </div>
+            
+            <label for="header__btn-menu">
+              <svg
+                class="header__btn-close-menu"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+              >
+                <path
+                  fill="#fff"
+                  d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                />
+              </svg>
+            </label>
+          </div>
+          <!-- Navigation -->
+          <nav class="header__nav">
+            <ul class="header__list-mobile">
+              <li class="header__item">
+                <a href="#trending" class="header__link">Marketplace</a>
+              </li>
+              <li class="header__item">
+                <a href="#ranking" class="header__link">Rankings</a>
+              </li>
+              <li class="header__item">
+                <a href="#works" class="header__link">Connect a wallet</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Call to action -->
+          <a href="#!" class="btn btn-secondary header__btn header__btn-mobile">
+            <img alt="user-sign-up" src="./assets/icon/user-sign-up.svg" />
+            Sign Up</a
+          >
+        </div>
       </div>
     </header>
 
@@ -173,7 +239,10 @@
                 </div>
               </a>
               <a href="#!" class="btn btn-secondary hero__cta">
-                <img alt="icon RocketLaunch" src="./assets/icon/RocketLaunch.svg" />
+                <img
+                  alt="icon RocketLaunch"
+                  src="./assets/icon/RocketLaunch.svg"
+                />
                 <span>Get Started</span>
               </a>
               <div class="hero__stats">
@@ -353,7 +422,10 @@
               </p>
             </div>
             <a href="#!" class="btn btn-secondary creators__btn-desktop">
-              <img alt="icon RocketLaunch" src="./assets/icon/RocketLaunch-blue.svg" />
+              <img
+                alt="icon RocketLaunch"
+                src="./assets/icon/RocketLaunch-blue.svg"
+              />
               <span>View Rankings</span>
             </a>
           </div>
@@ -564,7 +636,10 @@
             </a>
           </div>
           <a href="#!" class="btn btn-secondary btn-ranking-mobile">
-            <img alt="icon RocketLaunch" src="./assets/icon/RocketLaunch-blue.svg" />
+            <img
+              alt="icon RocketLaunch"
+              src="./assets/icon/RocketLaunch-blue.svg"
+            />
             <span>View Rankings</span>
           </a>
         </div>
@@ -1133,43 +1208,45 @@
         <div class="container">
           <div class="nft-highlight__inner">
             <div class="nft-highlight__block">
-              <div class="nft-highlight__artist">
-                <img
-                  width="24"
-                  height="24"
-                  src="./assets/img/avatar/avatar7.png"
-                  alt="avatar Shroomie"
-                />
-                <p class="base-body-work-sans">Shroomie</p>
-              </div>
-              <h2 class="h2-work-sans heading-h2 nft-highlight__title">
-                Magic Mashrooms
-              </h2>
-              <div
-                class="nft-highlight__auction nft-highlight__auction--mobile"
-              >
-                <p class="caption-space-mono">Auction ends in:</p>
-                <div class="nft-highlight__timer">
-                  <div class="nft-highlight__time-unit">
-                    <p class="h3-space-mono">59</p>
-                    <p class="caption-space-mono">Hours</p>
-                  </div>
-                  <p class="h4-space-mono">:</p>
-                  <div class="nft-highlight__time-unit">
-                    <p class="h3-space-mono">59</p>
-                    <p class="caption-space-mono">Minutes</p>
-                  </div>
-                  <p class="h4-space-mono">:</p>
-                  <div class="nft-highlight__time-unit">
-                    <p class="h3-space-mono">59</p>
-                    <p class="caption-space-mono">Seconds</p>
+              <div class="nft-highlight__content">
+                <div class="nft-highlight__artist">
+                  <img
+                    width="24"
+                    height="24"
+                    src="./assets/img/avatar/avatar7.png"
+                    alt="avatar Shroomie"
+                  />
+                  <p class="base-body-work-sans">Shroomie</p>
+                </div>
+                <h2 class="h2-work-sans heading-h2 nft-highlight__title">
+                  Magic Mashrooms
+                </h2>
+                <div
+                  class="nft-highlight__auction nft-highlight__auction--mobile"
+                >
+                  <p class="caption-space-mono">Auction ends in:</p>
+                  <div class="nft-highlight__timer">
+                    <div class="nft-highlight__time-unit">
+                      <p class="h3-space-mono">59</p>
+                      <p class="caption-space-mono">Hours</p>
+                    </div>
+                    <p class="h4-space-mono">:</p>
+                    <div class="nft-highlight__time-unit">
+                      <p class="h3-space-mono">59</p>
+                      <p class="caption-space-mono">Minutes</p>
+                    </div>
+                    <p class="h4-space-mono">:</p>
+                    <div class="nft-highlight__time-unit">
+                      <p class="h3-space-mono">59</p>
+                      <p class="caption-space-mono">Seconds</p>
+                    </div>
                   </div>
                 </div>
+                <a href="#!" class="btn btn-secondary nft-highlight__button">
+                  <img alt="icon Eye" src="./assets/icon/eye.svg" />
+                  <span>See NFT</span>
+                </a>
               </div>
-              <a href="#!" class="btn btn-secondary nft-highlight__button">
-                <img alt="icon Eye" src="./assets/icon/eye.svg" />
-                <span>See NFT</span>
-              </a>
               <div
                 class="nft-highlight__auction nft-highlight__auction--desktop"
               >
@@ -1271,7 +1348,7 @@
               <p class="body-text-work-sans heading-h2-desc">
                 Get exclusive promotions & updates straight to your inbox.
               </p>
-              <form method="post" action="#!">
+              <form method="post" action="./index.html">
                 <div class="digest__form">
                   <div class="digest__background-input">
                     <input
@@ -1284,10 +1361,13 @@
                       required
                     />
                   </div>
-                  <a href="#!" class="btn btn-secondary digest__button">
+                  <button
+                    type="submit"
+                    class="btn btn-secondary digest__button"
+                  >
                     <img alt="icon mail" src="./assets/icon/mail.svg" />
                     <span>Subscribe</span>
-                  </a>
+                  </button>
                 </div>
               </form>
             </div>
@@ -1301,7 +1381,7 @@
           <div class="footer__inner">
             <div class="footer__content">
               <div class="footer__contact">
-                <a href="#!" class="footer__logo-link">
+                <a href="./index.html" class="footer__logo-link">
                   <div class="footer__logo">
                     <img
                       src="./assets/icon/logo-page.svg"
@@ -1371,7 +1451,7 @@
                 <p class="base-body-work-sans footer__subscribe-desc">
                   Get exclusive promotions & updates straight to your inbox.
                 </p>
-                <form method="post" action="#!">
+                <form method="post" action="./index.html">
                   <div class="footer__form">
                     <div class="footer__background-input">
                       <input
@@ -1384,9 +1464,12 @@
                         required
                       />
                     </div>
-                    <a href="#!" class="btn btn-secondary footer__button">
+                    <button
+                      type="submit"
+                      class="btn btn-secondary footer__button"
+                    >
                       <span>Subscribe</span>
-                    </a>
+                    </button>
                   </div>
                 </form>
               </div>
@@ -1394,8 +1477,10 @@
           </div>
           <div class="caption-work-sans footer__copyright">
             &#169;
-            <a href="#!" class="footer__copyright-link">NFT Market.</a> Use this
-            template freely.
+            <a href="./index.html" class="footer__copyright-link"
+              >NFT Market.</a
+            >
+            Use this template freely.
           </div>
         </div>
       </footer>

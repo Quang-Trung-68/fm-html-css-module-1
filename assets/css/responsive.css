@@ -1,5 +1,6 @@
 /* * *  PC Thiet bi lon hon (min-width: 1024.02px) * * */
 @media (min-width: 1024.02px) {
+  
 }
 
 /* * * Thiet bi Tablet & Mobile: @media screen and (max-width: 991px) * * */
@@ -7,6 +8,92 @@
   .header__list,
   .header__btn {
     display: none;
+  }
+  .dropdown-menu-mobile{
+    display: block;
+    position: fixed;
+    left:0;
+    top: 0;
+  }
+
+  .dropdown-menu-mobile{
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 2;
+    height: 100vh;
+    background-color: #2b2b2b;
+    width: auto;
+  }
+
+  .header__btn-menu:has(input:checked) ~ .dropdown-menu-mobile{
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .dropdown-menu-mobile .header__nav{
+    margin-left: 0;
+  }
+
+  .dropdown-menu-mobile .header__logo-link{
+    margin-top: 10px;
+  }
+
+  .dropdown-menu-mobile .dropdown-logo-btn-close{
+    display: flex;
+    gap: 20px;
+  }
+  .header__btn-close-menu{
+    margin: 10px;
+  }
+
+  .header__btn-close-menu:hover{
+    color:#2b2b2b
+  }
+
+  .dropdown-menu-mobile .header__btn{
+    margin-left: 0;
+  }
+
+  .dropdown-menu-mobile label{
+    margin-left: auto;
+  }
+
+  .dropdown-menu-mobile .header__link{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .dropdown-menu-mobile .header__link:hover{
+    background-color: #3b3b3b;
+  }
+
+  .header__btn-menu:has(input:checked) .header__btn-icon{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  body:has(input:checked) .overlay-menu-dropdown{
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+
+
+  .header__btn-mobile{
+    display: inline-flex;
+    margin-top: 50px;
+  }
+  .header__list-mobile{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .header__link{
+    display: inline-block;
   }
 
   .heading-h2 {
@@ -19,11 +106,12 @@
     line-height: 1.4;
   }
 
-  .header__btn-menu {
+   .header__btn-menu {
     display: block;
     background-color: #2b2b2b;
     border: none;
   }
+  
 }
 /*  * * Thiet bi rieng Tablet: @media screen and (min-width: 768px) and (max-width: 991px) * * */
 @media screen and (min-width: 768px) and (max-width: 990.98px) {
@@ -174,12 +262,12 @@
     margin-top: 40px;
   }
   .works__title{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.4;
   }
 
   .works__text{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.4;
   }
 
@@ -277,6 +365,7 @@
   .header {
     padding: 15px 30px;
   }
+  
 
   /* ======Hero====== */
 
@@ -484,8 +573,13 @@
     display: none;
   }
 
+  .nft-highlight__auction--mobile{
+    display: block;
+  }
+
   .nft-highlight__block {
     margin-top: 120px;
+    display: block;
   }
 
   .nft-highlight__title {
@@ -495,8 +589,9 @@
   }
 
   .nft-highlight__auction--mobile {
-    position: static;
+    display: block;
     margin-top: 30px;
+    width: 100%;
   }
 
   .nft-highlight__button{
@@ -532,12 +627,12 @@
   }
 
   .works__title{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 1.4;
   }
 
   .works__text{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.4;
   }
 
