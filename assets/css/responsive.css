@@ -41,6 +41,7 @@
   width: 100%;
   height: 100%; */
   scroll-behavior: none;
+  /* prevent scroll when open dropdown menu */
   touch-action: none;
   -webkit-overflow-scrolling: none;
   }
