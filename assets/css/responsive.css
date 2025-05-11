@@ -40,10 +40,10 @@
   position: fixed;
   width: 100%;
   height: 100%; */
-  scroll-behavior: none;
-  /* prevent scroll when open dropdown menu */
-  touch-action: none;
-  -webkit-overflow-scrolling: none;
+    scroll-behavior: none;
+    /* prevent scroll when open dropdown menu */
+    touch-action: none;
+    -webkit-overflow-scrolling: none;
   }
 
   .dropdown-menu-mobile .header__nav {
@@ -57,7 +57,7 @@
   .dropdown-menu-mobile .dropdown-logo-btn-close {
     display: flex;
     gap: 20px;
-    padding:15px
+    padding: 15px;
   }
   .header__btn-close-menu {
     margin: 10px;
