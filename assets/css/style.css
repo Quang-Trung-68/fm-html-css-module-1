@@ -212,7 +212,7 @@ input {
 }
 
 .overlay-menu-dropdown{
-  background-color: #0000005c;
+  background-color: #000000bb;
   position: fixed;
   inset: 0;
   opacity: 0;

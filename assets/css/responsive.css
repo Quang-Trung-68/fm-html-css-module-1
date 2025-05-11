@@ -35,12 +35,15 @@
 
   /* prevent scroll when open menu dropdown */
 
-  /* body:has(input:checked) {
-    overflow: hidden;
+  body:has(input:checked) {
+    /* overflow: auto;
   position: fixed;
   width: 100%;
-  height: 100%;
-  } */
+  height: 100%; */
+  scroll-behavior: none;
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  }
 
   .dropdown-menu-mobile .header__nav {
     margin-left: 0;
@@ -53,6 +56,7 @@
   .dropdown-menu-mobile .dropdown-logo-btn-close {
     display: flex;
     gap: 20px;
+    padding:15px
   }
   .header__btn-close-menu {
     margin: 10px;
@@ -639,7 +643,7 @@
   }
 
   .works__text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.4;
   }
 
